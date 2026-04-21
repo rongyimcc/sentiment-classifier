@@ -58,8 +58,45 @@ The system focuses on:
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation and run
 
 ```bash
 pip install torch nltk pandas numpy scikit-learn tqdm
+
+```
+---
+```
+
+python sentiment_classifier.py
+
+```
+---
+
+## Results
+
+- Validation Accuracy: ~82%  
+- Test Accuracy: ~85%  
+- Model trained using Transformer encoder with positional encoding
+
+
+---
+##Key Highlights
+
+- Built a custom NLP pipeline from raw text to model training
+- Implemented Transformer encoder with positional encoding from scratch
+- Designed efficient batching using PyTorch DataLoader
+- Applied validation-based checkpointing to prevent overfitting
+- Achieved strong performance on sentiment classification task
+---
+
+
+
+
+
+
+
+
+
+
+
 
