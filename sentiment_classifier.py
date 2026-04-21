@@ -326,7 +326,7 @@ def train_model(model, dataset_train, dataset_val, batch_size=64, num_epoch=1, l
 
 if __name__ == '__main__':
     torch.manual_seed(SEED)
-    data_file = os.path.join("q4", "data", "movie_reviews_labelled.csv")
+    data_file = os.path.join( "data", "movie_reviews_labelled.csv")
     Xr_train, y_train, Xr_val, y_val, Xr_test, y_test = prepare_dataset(filename=data_file)
 
     get_tokenised_docs = lambda Xr: [tokenise_text(xr) for xr in tqdm(Xr)]
