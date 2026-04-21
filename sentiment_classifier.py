@@ -113,7 +113,7 @@ def build_vocab(Xt, min_freq=1):
             end = i
             break
     vocab = {token: idx+PAD_IDX+1 for (idx, (token, freq)) in enumerate(sorted_token_freq_pairs[:end])}  # PAD_IDX is reserved for padding
-    vocab[CLS_TOKEN] = len(vocab) + PAD_IDX
+    vocab[CLS_TOKEN] = len(vocab) + PAD_IDX +1 
 
     print(f'Vocabulary size: {len(vocab)}')
     return vocab
